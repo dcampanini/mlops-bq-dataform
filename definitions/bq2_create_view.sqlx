@@ -1,8 +1,6 @@
 config {
  type: "view"
 }
-CREATE OR REPLACE VIEW
-`census.input_data2` AS
 SELECT
 age,
 workclass,
