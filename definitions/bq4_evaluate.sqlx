@@ -1,0 +1,16 @@
+config {
+ type: "view"
+}
+SELECT
+*
+FROM
+ML.EVALUATE (MODEL `census.census_model`,
+  (
+  SELECT
+    *
+  FROM
+    ${ref("bq2_create_view")}
+  WHERE
+    dataframe = 'evaluation'
+  )
+)

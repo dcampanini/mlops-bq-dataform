@@ -1,5 +1,6 @@
+config { type: "operations" }
 CREATE OR REPLACE MODEL
-`census.census_model2`
+`census.census_model_orq`
 OPTIONS
 ( model_type='RANDOM_FOREST_CLASSIFIER', # options: LOGISTIC_REF, AUTOML_CLASSIFIER, XGBOOST, RANDOM_FOREST_CLASSIFIER
   auto_class_weights=TRUE, # whether to balance class labels using weights for each class in inverse proportion to the frequency of that class
