@@ -14,3 +14,4 @@ ML.EVALUATE (MODEL `census.census_model`,
     dataframe = 'evaluation'
   )
 )
+
