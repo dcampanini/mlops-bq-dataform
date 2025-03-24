@@ -16,4 +16,4 @@ CASE
 END AS dataframe
 FROM
 `bigquery-public-data.ml_datasets.census_adult_income`
-limit 200
+limit 210
